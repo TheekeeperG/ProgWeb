@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="CSS/estilos.css" >
+    <script type="text/javascript" src="JS/jquery.js"></script>
+    <script type="text/javascript" src="JS/scripts.js"></script>
+</head>
+<body>
+    <div class="navegacion">
+        <nav>
+            <ul>
+                <li><a>Home</a></li>
+                <li><a>Contacto</a></li>
+                <li><a>Nosotros</a>
+                    <ul>
+                        <li><a>Misión</a></li>
+                        <li><a>Visión</a></li>
+                        <li><a>Valores</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    
+    <main>
+        <h1 id="js"></h1>
+        <h1 id="jquery"></h1>
+    </main>
+    <script type="text/javascript">
+        $('#jquery').on('mouseenter',function(){
+            'use-strict',
+                $(this).addClass('nuevaclase');
+        });
+        $('#jquery').on('mouseleave',function(){
+            'use-strict',
+                $(this).removeClass('nuevaclase');
+        });
+    </script>
+</body>
