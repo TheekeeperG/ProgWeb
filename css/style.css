@@ -78,3 +78,32 @@ HEADER{
     padding-top: 2.5%;
     
 }
+/** Segunda pagina**/
+#tematica{
+    color: aliceblue;
+    text-align: center;
+}
+.principalpag2{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.style1{
+        background-color: rgba(61, 67, 69, 0.6);
+		border: 1px solid rgba(61, 67, 69, 0.6); padding: 3px;
+		font: 11px, sans-serif; 
+        width: 20%;
+        margin: 10px;
+        float: left;
+}
+.style1 pag2img1{
+        border: 1px solid #CCCCCC;
+		vertical-align:middle; 
+		margin-bottom: 3px;
+}
+#pag2img1{
+    border-style: solid;
+    width: 100px;
+    height: 100px;
+    
+}
+
