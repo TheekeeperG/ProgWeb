@@ -9,63 +9,16 @@ h1{
   color:white;
   font-family: cursive;
 }
-#prueba{
-    
-}
-/**menu**/
-.navegacion {
-  background-color: ;
-}
-nav {
-  width: 1100px;
-  margin: 0 auto;
-  position: relative;
-}
-nav ul {
-  list-style: none;
-    padding-top: 2px;
-}
-nav > ul > li {
-  float: left;
-}
-nav ul::after {
-  content: '';
-  display: block;
-  clear: both;
-}
-nav ul li a {
-  display: inline-block;
-  width: 200px;
-  color: #ffffff;
-  text-decoration: none;
-  text-align: center;
-  padding: 20px;
-  background-color:  rgba(61, 67, 69, 0.6);
-}
-nav ul li a:hover {
-  background-color: red;
-}
-/** Segundo Nivel **/
-nav ul ul {
-  position: absolute;
-  top:100%;
-  background-color: red;
-  display: none;
-}
-nav ul li:hover > ul {
-  display: block;
-}
-nav ul li:hover  {
-  background-color: red;
-}
-/** slider **/
-.dlef{
+
+.dleft{
     
     width: 20%;
     background-color: red;
     height: 100%;
     padding: 0%;
     margin: 0%;
+    border: 0%;
+    float:left;
 }
 .dright{
     width: 20%;
@@ -74,13 +27,15 @@ nav ul li:hover  {
     margin-right: 0%;
     padding: 0%;
         margin: 0%;
+    float:right;
 }
-.Mom{
-    width:50%;
-   
+.dmid{
+    width:50%; 
+    float:left;
     padding-top:1%;
     padding-bottom: 0%;   
-    padding-right: 0%;
+    padding-left: 5%;
+    margin: 0%;     
 }
 .img{
     width: 1400px;
