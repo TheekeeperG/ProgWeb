@@ -1,40 +1,57 @@
 body{
     
-    background-image: url(rogue.jpeg);
+ background-color: seashell;
     background-size: 150%;
 }
-h1{
-  margin-top: -5%;
-  margin-left: 70%;
-  color:white;
+#h1{
+ 
+  color:black;
   font-family: cursive;
+    margin-right: 10%;
+    padding-top: 2%;
+    text-align: center;
+    width: 40%;
+    float: right;
 }
-
+#log{
+    
+    width: 40%;
+    height: 25%;
+}
 .dleft{
     
     width: 20%;
-    background-color: red;
+   
     height: 100%;
     padding: 0%;
     margin: 0%;
-    border: 0%;
+   
+    padding-top: 7%;
     float:left;
+}
+#dis{
+    width: 100%;
+    height: 100%;
 }
 .dright{
     width: 20%;
-    background-color: red;
+   border-style: solid; 
+    border: 2px;
     height: 100%;
     margin-right: 0%;
     padding: 0%;
         margin: 0%;
+    padding-top: 5%;
+    margin-right: 1%;
     float:right;
 }
 .dmid{
-    width:60%; 
+    width:57%; 
     float:left;
-    padding-top:1%;
+    padding-top:0%;
     padding-bottom: 0%;   
-    padding-left: 0%;
+    padding-left: 2%;
+    padding-right: 0%;
     margin: 0%;     
 }
 .img{
@@ -59,12 +76,21 @@ h2{
 }
 Footer{
     background-size: 100%;
-    background-color: rgba(61, 67, 69, 0.6);
- width: 100%;
+    background-color: rgba(61, 67, 69, 0.3);
+    width: 100%;
     float: left;
+  
+}
+.foot-sec{
+    margin: 0%;
+padding: 0%;
+    width: 33.3%;
+    float: left;
+    align-content: center;
 }
 /**Map api**/
 #map {
+    padding-top: 10%;
     width: 100%;
     height: 400px;
     background-color: grey;
@@ -75,6 +101,10 @@ Footer{
     height: 550px;
 }
 HEADER{
-    padding-top: 2.5%;
+    padding-top: 4%;
     
+}
+.imgLog{
+    width: 15%;
+    margin-left: 50%;
 }

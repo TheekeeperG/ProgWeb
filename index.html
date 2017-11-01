@@ -3,7 +3,7 @@
 
 <head>
     <title> Disfraces </title>
-    
+
     <link rel="stylesheet" href="css/jquery.bxslider.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/w3.css">
@@ -15,41 +15,78 @@
 <body>
 
     <header>
-        <img src="css/LOGO_PRRON.png" id="log">
-        <h1>Texto introductorio</h1>
+        <img src="img/logo.png" id="log">
+        <h1 id="h1">Un disfraz para cada ocasión.</h1>
     </header>
 
 
-<div class="w3-top">
-  <div class="w3-bar w3-red">
-    <a href="#" class="w3-bar-item w3-button">Home</a>
-    <a href="#" class="w3-bar-item w3-button">Link 1</a>
-    <a href="#" class="w3-bar-item w3-button">Link 2</a>
-    <a href="#" class="w3-bar-item w3-button">Link 3</a>
-  </div>
-</div>
+    <div class="w3-top">
+        <div class="w3-row w3-padding w3-sand">
+            <div class="w3-col s3">
+                <a href="index.html" class="w3-button w3-block w3-Light Green">INICIO</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="#about" class="w3-button w3-block w3-Light Green">DISFRACES</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="#menu" class="w3-button w3-block w3-Light Green">MAQUILLAJE</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="#where" class="w3-button w3-block w3-Light Green">ACCESORIOS</a>
+            </div>
+        </div>
+    </div>
 
-    
+
     <div class="dleft">
-        sdfafsd
+        <img src="img/dis.png" id="dis">
+
+
     </div>
     <div class="dmid">
 
         <div class="slider">
-            <div><img src="img/Deadshot%20Daiquiri.jpg" title="Imagen 1" class="img"></div>
-            <div><img src="img/Duble%20Tap%20II.jpg" title="Imagen 2" class="img"></div>
-            <div><img src="img/Speed%20Cola.jpg" title="Imagen 3" class="img"></div>
-            <div><img src="img/Widos%20wine.jpg" title="Imagen 4" class="img"></div>
-            <div><img src="img/Quick%20Revive.jpg" title="Imagen 5" class="img"></div>
+            <div><img src="img/img4.jpg" title="Concurso de disfraces abierto." class="img"></div>
+            <div><img src="img/img1.jpg" title="Los mejores disfraces. " class="img"></div>
+            <div><img src="img/img2.jpg" title="Maquillaje para este Halloween." class="img"></div>
+            <div><img src="img/img3.jpg" title="Accesorios para tu fiesta." class="img"></div>
+
         </div>
 
     </div>
     <div class="dright">
-        asddafsfda
-    </div>
 
+        <div id="mapon">
+            <div id="map">
+                <script>
+                    function initMap() {
+
+                        var uluru = {
+                            lat: 24.035854,
+                            lng: -104.651475
+                        };
+                        var map = new google.maps.Map(document.getElementById('map'), {
+                            zoom: 4,
+                            center: uluru
+                        });
+                        var marker = new google.maps.Marker({
+                            position: uluru,
+                            map: map
+                        });
+                    }
+
+                </script>
+            </div>
+        </div>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBrpAAy2oSibBo5RxQ6aBbXMo89qm7dC4E&callback=initMap">
+
+
+        </script>
+    </div>
     <footer>
-        <h2>Buscanos en nuestras redes</h2>
+        <div class="foot-sec w3-sand" ><a href="https://www.facebook.com"> <img class="imgLog" src="img/f.png" title="Facebook"></a></div>
+          <div class="foot-sec w3-sand" ><a href="https://www.Twitter.com"> <img class="imgLog" src="img/t.png" title="Facebook"></a></div>
+          <div class="foot-sec w3-sand" ><a href="https://www.youtube.com"> <img class="imgLog" src="img/y.png" title="Facebook"></a></div>
     </footer>
 </body>
 

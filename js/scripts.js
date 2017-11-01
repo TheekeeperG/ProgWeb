@@ -6,5 +6,9 @@ $(document).ready(function() {
         auto: true,
         stopAutoOnClick: true,
         keyboardEnabled: true
+        
+        /*AAAAAQQQQQQQQQQUUUUUUUUUUIIIIIIIIIIIII*///
+        
+        
     });
 });
