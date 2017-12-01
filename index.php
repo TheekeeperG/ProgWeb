@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> MoonLight </title>
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/w3.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/scripts.js"></script>
+</head>
+
+<body>
+
+    <header class="w3-container w3-center w3-padding-48 w3-white">
+        <h1 class="w3-xxxlarge"><b>MoonLight</b></h1>
+        <h6>Desde máscaras hasta disfraces bienvenido a <span class="w3-tag">MoonLigh Costumes</span></h6>
+    </header>
+    <div class="w3-top ">
+        <div class="w3-row w3-hide-small w3-black">
+            <div class="w3-quarter s5">
+                <a href="index.php" class="w3-button w3-bar-item w3-Light Green">  <img src="img/logo.png" id="log"></a>
+            </div>
+
+            <div class="w3-dropdown-hover">
+                <button class="w3-button w3-black w3-row">DISFRACES</button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="DisfracesH.php" class="w3-bar-item w3-button">Hombres</a>
+                    <a href="DisfrecesM.php" class="w3-bar-item w3-button">Mujeres</a>
+                </div>
+            </div>
+            <div class="w3-quarter s3">
+                <a href="Maquillaje.php" class="w3-button w3-block w3-Light Green">MAQUILLAJE</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="Accesorios.php" class="w3-button w3-block w3-Light Green">ACCESORIOS</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="dmid">
+        <div class="slider">
+            <div><img src="img/img4.jpg" title="Concurso de disfraces abierto." class="img"></div>
+            <div><img src="img/img1.jpg" title="Los mejores disfraces. " class="img"></div>
+            <div><img src="img/img2.jpg" title="Maquillaje para este Halloween." class="img"></div>
+            <div><img src="img/img3.jpg" title="Accesorios para tu fiesta." class="img"></div>
+        </div>
+    </div>
+    <footer>
+        <div class="foot-sec w3-white"><a href="https://www.facebook.com"> <img class="imgLog" src="img/f.png" title="Facebook"></a></div>
+        <div class="foot-sec w3-white"><a href="https://www.Twitter.com"> <img class="imgLog" src="img/t2.png" title="Twitter"></a></div>
+        <div class="foot-sec w3-white"><a href="https://www.youtube.com"> <img class="imgLog" src="img/y.png" title="Youtube"></a></div>
+    </footer>
+</body>
+
+</html>

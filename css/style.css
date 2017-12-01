@@ -1,133 +1,110 @@
-body{
-    
- background-color: white;
+body {
+
+    background-color: white;
     background-size: 150%;
 }
-#h1{
- 
-  color:black;
-  font-family: cursive;
+
+#h1 {
+
+    color: black;
+    font-family: cursive;
     margin-right: 10%;
     padding-top: 2%;
     text-align: center;
     width: 40%;
     float: right;
 }
-#log{
-    
+
+#log {
+
     width: 40%;
     height: 25%;
 }
-.dleft{
-    
+
+.dleft {
+
     width: 20%;
     height: 100%;
     padding: 0%;
     margin: 0%;
-   
+
     padding-top: 2%;
-    float:left;
+    float: left;
 }
-#dis{
+
+#dis {
     width: 100%;
     height: 100%;
 }
-.dright{
+
+.dright {
     width: 20%;
-   border-style: solid; 
+    border-style: solid;
     border: 2px;
     height: 100%;
     margin-right: 0%;
     padding: 0%;
-        margin: 0%;
+    margin: 0%;
     padding-top: 3%;
     margin-right: 5%;
-    float:right;
+    float: right;
 }
-.dmid{
-    width:100%; 
-    float:left;
-    padding-top:0%;
-    padding-bottom: 0%;   
+
+.dmid {
+    width: 100%;
+    float: left;
+    padding-top: 0%;
+    padding-bottom: 0%;
     padding-left: 0%;
     padding-right: 0%;
-    margin: 0%;     
+    margin: 0%;
 }
-.img{
+
+.img {
     width: 1400px;
     height: 500px;
 }
-h2{
-     color: azure;
-    text-align: left;
+
+h2 {
+    color: azure;
+    text-align: center;
     font-family: sans-serif;
 }
-#img{
+
+#img {
     width: 700px;
     height: 500px;
 }
+
 .slider {
     text-align: center;
 }
+
 /** Footer**/
-h2{
-    font-family: cursive;
-}
-Footer{
-    background-size: 100%;
-  
-    width: 100%;
-    float: left;
-  
-}
-.foot-sec{
+.foot-sec {
     margin: 0%;
-padding: 0%;
+    padding: 1%;
     width: 33%;
     float: left;
     align-content: center;
 }
-/**Map api**/
-#map {
-    padding-top: 10%;
-    width: 100%;
-    height: 400px;
-    background-color: grey;
-  }
-.mapon{
-    padding-left: -10%;;
-    width: 300px;
-    height: 550px;
-}
-HEADER{
+
+HEADER {
     padding-top: 4%;
-    
 }
-.imgLog{
+
+.imgLog {
     width: 15%;
     margin-left: 50%;
 }
+
 /** Tercera pagina**/
-.principalpag2{
-    padding-top: 5%;
-    margin-left: 5%;
-    margin-right: 5%;
+
+.img-rounded {
+    width: 80%;
+    height: 36%;
+    padding-left: 15%
 }
-.style1{
-        text-align: center;
-		font: 11px, sans-serif; 
-        width: 20%;
-        margin: 10px;
-        float: left;
-}
-.style1 pag2img1{
-    text-align: center;
-		vertical-align:middle; 
-		margin-bottom: 3px;
-}
-#pag2img1{
-    text-align: center;
-    width: 100px;
-    height: 100px;
-    
+p {
+    text-align: center
 }
