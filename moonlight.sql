@@ -25,7 +25,7 @@ SET time_zone = "+00:00";
 --
 -- Estructura de tabla para la tabla `articulos`
 --
-
+use moonlight;
 CREATE TABLE `articulos` (
   `ID_ARTICULO` int(11) NOT NULL,
   `CANTIDAD` int(20) NOT NULL,
