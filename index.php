@@ -2,7 +2,7 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "Absolutezero257";
+$password = "13060613";
 $dbname = "moonlight";
 
 // Create connection
@@ -12,7 +12,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 ?>
-    <html onmouseenter="h()">
+    <html>
 
     <head>
         <title> MoonLight </title>
@@ -182,7 +182,7 @@ if ($conn->connect_error) {
                         $m=1;
                         $cat="Mo";
                         if ($result->num_rows > 0) {
-            // output data of each row
+          
                                 while($row = $result->fetch_assoc()) {
                                    
                                     if($j==1){
@@ -241,59 +241,94 @@ if ($conn->connect_error) {
                 </div>
             </div>
             <!----------------Maquillaje------------->
+            
+             <div class="w3-container w3-content w3-center" style="max-width:800px" id="DMan">
+                <h3 class="w3-wide">Maquillaje</h3>
+                <hr class="w3-middle" style="width:50%; margin-left:25%;">
+
+                <p class="w3-justify">Contamos con los mejores disfraces para mujeres, con piezas que van desde inocentes unicornos a malvadas diablillas, con un amplio surtido también en accesorios como pelucas, látex, sombras para ojos, juegos de brochas, lipsticks y un montón de cosas más, sé la más coqueta de la fiesta vistiendo prendas de MoonLight Costumes!.</p>
+                <div class="w3-row w3-padding-32">
+
+
+
+                    <?php
+                        $sql = "SELECT ID_IMAGEN, NOMBRE, PRECIO FROM IMAGENES WHERE CATEGORIA='P';";
+                        $result = $conn->query($sql);
+                        $j=1;
+                        $m=1;
+                        $cat="Mo";
+                        if ($result->num_rows > 0) {
+            // output data of each row
+                                while($row = $result->fetch_assoc()) {
+                                   
+                                    if($j==1){
+                                    echo '
+                <div class="w3-row w3-padding-32">
+                   <div class="w3-third">
+                        <div onclick="h1('.$row["ID_IMAGEN"].')" class="w3-card">
+                            <p>'.$row["NOMBRE"].'</p>
+                            <img src="img/P%20('.$row["ID_IMAGEN"].').jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+                        </div>
+                      
+                    </div>';
+                $j++;
+                $m++;
+                                        
+                    }
+                          else if($j==2){
+                                    echo '          
+                    <div class="w3-third">
+                        <div onclick="h1('.$row["ID_IMAGEN"].')" class="w3-card">
+                            <p>'.$row["NOMBRE"].'</p>
+                            <img src="img/P%20('.$row["ID_IMAGEN"].').jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+                        </div>
+                    </div>';
+                               $j++;
+                $m++;}
+                                        else if($j==3){
+                                            $j=1;
+                                            $m++;
+                                    echo '
+                    <div class="w3-third">
+                        <div onclick="h1('.$row["ID_IMAGEN"].')" class="w3-card">
+                            <p>'.$row["NOMBRE"].'</p>
+                            <img src="img/P%20('.$row["ID_IMAGEN"].').jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+                        </div>
+                    </div>
+                </div>';}
+                                if ($m==4){
+                                    
+                                    ?>
+                        <button id="ver" onclick="unHide('Po')" class="w3-btn w3-block w3-black w3-center-align">Ver más</button>
+
+                        <div id="Po" class="w3-hide"> ';
+                            <?php
+                                }
+                                }
+                            } else {
+                                echo "0 results";
+                                    }
+                      
+                    ?>
+
+                        </div>
+
+
+                </div>
+            </div>
             <!----------------Accesorios------------->
 
 
             <!-----------------ConfirmarCarrito------->
-            <?php  $sql = "SELECT ID_IMAGEN,CATEGORIA, NOMBRE, PRECIO FROM IMAGENES WHERE ID_IMAGEN=".$_GET['name'].";";
-                        $result = $conn->query($sql);
-            $row = $result->fetch_assoc();?>
-            <div onClick="bigImg()" id="ticketModal" class="w3-modal">
-                <div class="w3-modal-content w3-animate-top w3-card-2">
-                    <header class="w3-container w3-teal w3-center w3-padding-32">
-                        <span onclick="document.getElementById('ticketModal').style.display='none'" class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
-                        <h2 class="">
-                            <p id="Nombre">
-                                <?php echo $row["NOMBRE"];?>
-                            </p>
-                        </h2>
-                    </header>
-                    <div class="w3-container ">
-                        <div class="w3-card w3-padding-64"><img class="w3-right" style="max-width:500px; margin-left=20%" src='<?php echo "img/".$row["CATEGORIA"]." (".$row["ID_IMAGEN"].").JPG"; ?>'>
-                            <div class="w3-container w3-padding-64 w3-topmiddle w3-red w3-tag w3-jumbo ">PRECIO:
-                                <?php echo $row["PRECIO"];?> $</div>
-                                <label class="w3-tag">Dejanos tu email y te lo llevamos a tu casa. </label>
-                            <form action="index2.php" method="post">
-                            <input  type="email" name=email>
-                            <input class="w3-input w3-border w3-button" value="upload" type="Submit" placeholder="" name="submit">
-                                </form>
-                        </div>
-                       
-
-                    </div>
-                </div>
-            </div>
+            
         </div>
 
         <script>
-            function h() {
-                if (document.getElementById('hipe').value > 0) {
-                    if (<?php echo $_GET['name']?> == "") {
-
-                        var sasdf = "";
-                        alert(<?php echo "sa";?>);
-                    } else {
-                        document.getElementById('ticketModal').style.display = 'block';
-                        alert(<?php echo $_GET['name'];?>);
-                        document.getElementById('hipe').value = "0";
-                    }
-                }
-            }
-
+          
             function h1(idi) {
 
                 var javascriptVariable = idi;
-                window.location.href = "index.php?name=" + javascriptVariable;
+                window.location.href = "index2.php?name=" + javascriptVariable;
 
 
 

@@ -1,2 +1,10 @@
-.mySlides {display: none}
-    .cien{width:100%}
+.mySlides {display: none;}
+    .cien{width:100%;}
+
+#login{
+
+     background-image: url(/FN/FN2/CSS/Fondo.jpg);
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+
+}

@@ -1,9 +1,15 @@
 $(document).ready(function () {
 
 carousel();
-
+mer();
 });  
-    
+    function mer(){
+        
+        if (window.location == "index.php"){
+            
+            alert("hee");
+        } 
+    }
 function litNav() {
     var x = document.getElementById("navDemo");
     if (x.className.indexOf("w3-show") == -1) {
