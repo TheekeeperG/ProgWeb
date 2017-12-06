@@ -1,0 +1,13 @@
+wenas noshes. 
+Chicos, para hacer que la
+wea fome siguiente funcione
+deben crear una base de 
+datos llamada 'moonlight'
+darle click e importar. Una
+vez en la ventana de importar
+suben el archivo moonlight.sql
+que se encuentra en el rar. 
+La carpeta FN2 la ponen en 
+appserv/www/, luego cambien insert.php 
+e index.php con la contraseña de 
+sus respectivos localhost/ y ia :v.
