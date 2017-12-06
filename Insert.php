@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "13060613";
+$password = "Absolutezero257";
 $dbname = "moonlight";
 
 // Create connection

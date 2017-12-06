@@ -2,7 +2,7 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "13060613";
+$password = "Absolutezero257";
 $dbname = "moonlight";
 
 // Create connection
@@ -92,7 +92,9 @@ if ($conn->connect_error) {
                 <h3 class="w3-wide">Disfraces para hombres</h3>
                 <hr class="w3-middle" style="width:50%; margin-left:25%;">
                 <input type="hidden" id="hipe" value="1" ;>
-                <p class="w3-justify">Contamos con los mejores disfraces para hombres, hechos con la mejor calidad... lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p class="w3-justify">Contamos con los mejores disfraces para hombres, hechos con materiales de primerisima calidad y los accesorios para maquillaje más impresindibles para que tu cosplay profesional o tu casero disfraz para Halloween se ve tal como debería de verse... Fantastico.
+                <br>
+                Con un gran catalogo con más de 1500 prendas para escoger, que van desde clásicos de Disney hasta franquicias de Marvel o DC incluso con accesorios de personajes de los videojuegos más populares como League of Legends u Overwatch todo a tu entera disposición y totalmente original.</p>
                 <div class="w3-row w3-padding-32">
 
 
@@ -102,7 +104,7 @@ if ($conn->connect_error) {
                         $result = $conn->query($sql);
                         $j=1;
                         $m=1;
-                        $cat=Ho;
+                        $cat="Ho";
                         if ($result->num_rows > 0) {
             // output data of each row
                                 while($row = $result->fetch_assoc()) {
@@ -168,7 +170,7 @@ if ($conn->connect_error) {
                 <h3 class="w3-wide">Disfraces para mujeres</h3>
                 <hr class="w3-middle" style="width:50%; margin-left:25%;">
 
-                <p class="w3-justify">Contamos con los mejores disfraces para mujeres, hechos con la mejor calidad... lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p class="w3-justify">Contamos con los mejores disfraces para mujeres, con piezas que van desde inocentes unicornos a malvadas diablillas, con un amplio surtido también en accesorios como pelucas, látex, sombras para ojos, juegos de brochas, lipsticks y un montón de cosas más, sé la más coqueta de la fiesta vistiendo prendas de MoonLight Costumes!.</p>
                 <div class="w3-row w3-padding-32">
 
 
@@ -178,7 +180,7 @@ if ($conn->connect_error) {
                         $result = $conn->query($sql);
                         $j=1;
                         $m=1;
-                        $cat=Mo;
+                        $cat="Mo";
                         if ($result->num_rows > 0) {
             // output data of each row
                                 while($row = $result->fetch_assoc()) {
@@ -245,7 +247,7 @@ if ($conn->connect_error) {
             <!-----------------ConfirmarCarrito------->
             <?php  $sql = "SELECT ID_IMAGEN,CATEGORIA, NOMBRE, PRECIO FROM IMAGENES WHERE ID_IMAGEN=".$_GET['name'].";";
                         $result = $conn->query($sql);
-            $row = $result->fetch_assoc()?>
+            $row = $result->fetch_assoc();?>
             <div onClick="bigImg()" id="ticketModal" class="w3-modal">
                 <div class="w3-modal-content w3-animate-top w3-card-2">
                     <header class="w3-container w3-teal w3-center w3-padding-32">
